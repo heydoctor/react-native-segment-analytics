@@ -26,7 +26,6 @@ public class SegmentAnalyticsModule extends ReactContextBaseJavaModule {
         super(reactContext);
     }
 
-    @Override
     public String getName() {
         return "SegmentAnalytics";
     }
@@ -92,7 +91,7 @@ public class SegmentAnalyticsModule extends ReactContextBaseJavaModule {
             Log.e("SegmentAnalyticsModule", "Failed to alias " + newId + ". " + e.getMessage());
         }
     }
-    
+
     private boolean nullOrEmpty(@Nullable ReadableMap readableMap) {
         return readableMap == null || !readableMap.keySetIterator().hasNextKey();
     }
